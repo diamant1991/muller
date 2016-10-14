@@ -2435,6 +2435,8 @@ img {
 .item-title {
   text-align: center;
   padding-top: 35px; }
+  .item-title.grey-item:after {
+    background: url(../img/grey-line.png) no-repeat; }
   .item-title:after {
     content: "";
     display: block;
@@ -2449,15 +2451,110 @@ img {
 .item-text p {
   margin-bottom: 25px; }
 
-.garanty {
-  margin-bottom: 40px; }
-
 .garanty-wrapp {
   background: #fff;
   padding: 30px 35px;
   text-align: center; }
+  .garanty-wrapp p {
+    text-align: left; }
+  .garanty-wrapp h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 35px; }
+    .garanty-wrapp h2:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      height: 11px;
+      margin-left: 15px;
+      background: url(../img/orange.png) no-repeat; }
+    .garanty-wrapp h2:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      height: 11px;
+      margin-right: 15px;
+      background: url(../img/orange.png) no-repeat; }
 
 .gar-icon {
   width: 40px;
   height: 45px;
   background: url(../img/gar-icon.png) no-repeat; }
+
+.garant-btn {
+  width: 518px;
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  line-height: 73px;
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  background: url(../img/garanty-btn.png) no-repeat; }
+
+.garant-btn__text {
+  position: relative;
+  top: -5px; }
+
+.method__item {
+  margin-top: 90px; }
+
+.method {
+  margin-top: 80px; }
+  .method:after {
+    content: "";
+    display: block;
+    width: 134px;
+    height: 12px;
+    margin: 45px auto;
+    background: url(../img/grey-line.png) no-repeat; }
+
+.text-center {
+  text-align: center; }
+
+.method__descr {
+  padding-left: 20px;
+  padding-top: 15px;
+  line-height: 1.1; }
+  .method__descr a {
+    color: #7f8e93;
+    font-size: 17px; }
+
+.table-top {
+  display: table-cell;
+  vertical-align: top; }
+
+.method__number {
+  font-size: 60px;
+  font-family: "StemBold"; }
+
+.method__text {
+  font-size: 20px; }
+
+.repair-text__title {
+  font-size: 30px;
+  margin-bottom: 20px; }
+  .repair-text__title span:last-child {
+    padding-left: 15px; }
+
+.repair-text__item a {
+  color: #f86400; }
+  .repair-text__item a:hover {
+    text-decoration: underline; }
+
+.repair-text__item:last-child:after {
+  content: none; }
+
+.repair-text__item:after {
+  content: '';
+  display: block;
+  width: 134px;
+  height: 12px;
+  margin: 35px 0;
+  background: url(../img/grey-line.png) no-repeat; }
+
+.repair-img {
+  margin-top: 90px;
+  margin-bottom: 40px; }
