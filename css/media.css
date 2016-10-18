@@ -112,7 +112,22 @@
 @media (max-width: 991px) {
   .hidden-sm {
     display: none !important; }
+  .nav__menu {
+    display: block;
+    text-align: center; }
+    .nav__menu .burger-icon {
+      display: none; }
+    .nav__menu a {
+      display: block;
+      padding: 10px; }
+  .catalog-wrapp .bx-wrapper .bx-pager,
+  .catalog-wrapp .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    text-align: center;
+    bottom: 10px; }
   .nav {
+    height: auto;
+    margin-bottom: 15px;
     display: none; }
   .material-wrapp {
     display: block;
@@ -535,9 +550,10 @@
   .nav-btn {
     padding-top: 0; }
   .header {
-    padding-top: 25px; }
+    padding: 25px 0; }
   .logo {
     margin: 20px 0;
+    margin-top: 0;
     text-align: center; }
   .header__tel {
     font-size: 22px;
@@ -546,7 +562,8 @@
     padding: 10px 0; }
   .header__info {
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 25px; }
   .header__info__text {
     text-align: left; }
   .header__info__item {
