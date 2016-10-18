@@ -17,13 +17,19 @@
     <header class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="header-wrapp">
-    				<div class="logo">
+    			<div class="header-wrapp padding-xs">
+    				<div class="nav-btn visible-sm">
+    					<a href="#" class="navbar-toggle">
+    						<span class="middle burger-icon"></span>
+    						<span class="middle">меню</span>
+    					</a>
+    				</div>
+    				<div class="logo hidden-xs">
     					<a href="#">
     						<img src="img/logo.png" alt="">
     					</a>
     				</div>
-    				<div class="header__info">
+    				<div class="header__info hidden-sm">
     					<div class="header__info__item middle">
     						<div class="header__info__number block-vertical">
     							<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
@@ -51,7 +57,7 @@
     					</div>
     				</div>
     				<div class="header__contacts">
-    					<div class="header__tel font-medium">
+    					<div class="header__tel hidden-xs font-medium">
     						+7 (812) 400-77-20
     					</div>
     					<a href="#" class="header-btn">
@@ -63,7 +69,7 @@
     		</div>
     	</div>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
     	<div class="container">
     		<div class="row">
     			<ul class="nav__menu">
@@ -85,31 +91,138 @@
     		</div>
     	</div>
     </nav>
+    <div class="visible-xs logo">
+    	<a href="#">
+    		<img src="img/logo.png" alt="">
+    	</a>
+    </div>
+    <div class="header__tel visible-xs font-medium">
+    	+7 (812) 400-77-20
+    </div>
+    <div class="header__info visible-xs">
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			лет гарантии
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number2.png)"><b>24</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			месяца рассрочка
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number3.png)"><b>9</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			собственных <br>
+    			стандартов качества
+    		</div>
+    	</div>
+    </div>
     <div class="content">
       <div class="slider-item">
         <div class="container">
           <div class="row">
             <div class="slider">
-              <div class="before-text">проект</div>
-              <div class="after-text">реализация</div>
+              <div class="before-text hidden-sm">проект</div>
+              <div class="after-text hidden-sm">реализация</div>
               <ul class="bxslider main-slider">
                 <li>
-                  <div class="img-move">
+                  <!-- Десктоп -->
+                  <div class="img-move hidden-sm">
                     <img src="img/before.jpg" alt="">
                     <img src="img/2.jpg" alt="">
                   </div>
+                  <!-- Десктоп -->
+                  <!-- Планшет и ниже -->
+                  <div class="visible-sm">
+                    <div class="slider-tab">
+                      <ul class="slider-tab-list clearfix" role="tablist">
+                        <li role="presentation" class="active">
+                          <a href="#before" role="tab" data-toggle="tab">Проект</a>
+                        </li>
+                        <li role="presentation">
+                          <a href="#after" role="tab" data-toggle="tab">Реализация</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="before">
+                        <div class="slider__img" style="background-image: url(img/before.jpg)"></div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="after">
+                        <div class="slider__img" style="background-image: url(img/2.jpg)"></div>
+                      </div>
+                    </div>                  
+                  </div>
+                  <!-- Планшет и ниже -->
                 </li>
                 <li>
-                  <div class="img-move">
+                  <!-- Десктоп -->
+                  <div class="img-move hidden-sm">
                     <img src="img/before.jpg" alt="">
                     <img src="img/2.jpg" alt="">
                   </div>
+                  <!-- Десктоп -->
+                  <!-- Планшет и ниже -->
+                  <div class="visible-sm">
+                    <div class="slider-tab">
+                      <ul class="slider-tab-list clearfix" role="tablist">
+                        <li role="presentation2" class="active">
+                          <a href="#before2" role="tab" data-toggle="tab">Проект</a>
+                        </li>
+                        <li role="presentation2">
+                          <a href="#after2" role="tab" data-toggle="tab">Реализация</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="before2">
+                        <div class="slider__img" style="background-image: url(img/before.jpg)"></div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="after2">
+                        <div class="slider__img" style="background-image: url(img/2.jpg)"></div>
+                      </div>
+                    </div>                  
+                  </div>
+                  <!-- Планшет и ниже -->
                 </li>
                 <li>
-                  <div class="img-move">
+                  <!-- Десктоп -->
+                  <div class="img-move hidden-sm">
                     <img src="img/before.jpg" alt="">
                     <img src="img/2.jpg" alt="">
                   </div>
+                  <!-- Десктоп -->
+                  <!-- Планшет и ниже -->
+                  <div class="visible-sm">
+                    <div class="slider-tab">
+                      <ul class="slider-tab-list clearfix" role="tablist">
+                        <li role="presentation4" class="active">
+                          <a href="#before4" role="tab" data-toggle="tab">Проект</a>
+                        </li>
+                        <li role="presentation4">
+                          <a href="#after4" role="tab" data-toggle="tab">Реализация</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="before4">
+                        <div class="slider__img" style="background-image: url(img/before.jpg)"></div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="after4">
+                        <div class="slider__img" style="background-image: url(img/2.jpg)"></div>
+                      </div>
+                    </div>                  
+                  </div>
+                  <!-- Планшет и ниже -->
                 </li>
               </ul>
               <div class="slider__text">
@@ -184,115 +297,120 @@
               Что мы предлагаем?
             </h2>
           </div>
-          <div class="sentence-wrapp">
-            <div class="container">
-              <div class="row">
-                <div class="sentence__item blue">
-                  <div class="sentence__text">
-                    <div class="table-block">
-                      <div class="block-vertical">
-                        <h2 class="font-medium">100% сервис</h2>
-                        <h1>
-                          <b>под ключ</b>
-                        </h1>
-                        <p>Вы клиент из региона или просто занятый человек?</p>
-                        <p>Наша миссия максимальное оказание сервиса клиентам – мы сделаем за вас всё: просчитаем и организуем поставки материалов, отработаем с подрядчиками по кондиционерам, окнам, напишем заявление в УК или ТСЖ, подберем и закажем мебель, купим шторы и расставим цветы, сделаем уборку.</p>
-                        <a href="#" class="more font-medium">
-                          <span class="middle more-icon"></span>
-                          <span class="middle">Подробнее о ремонте под ключ</span>
-                        </a>
+          <ul class="bxslider" id="sentence-slider">
+            <li>
+              <div class="sentence-wrapp">
+                <div class="container">
+                  <div class="row">
+                    <div class="sentence__item blue">
+                      <div class="sentence__text">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <h2 class="font-medium">100% сервис</h2>
+                            <h1>
+                              <b>под ключ</b>
+                            </h1>
+                            <p>Вы клиент из региона или просто занятый человек?</p>
+                            <p>Наша миссия максимальное оказание сервиса клиентам – мы сделаем за вас всё: просчитаем и организуем поставки материалов, отработаем с подрядчиками по кондиционерам, окнам, напишем заявление в УК или ТСЖ, подберем и закажем мебель, купим шторы и расставим цветы, сделаем уборку.</p>
+                            <a href="#" class="more font-medium">
+                              <span class="middle more-icon"></span>
+                              <span class="middle">Подробнее о ремонте под ключ</span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
+                      <a href="#">
+                        <div class="sentence__video" style="background-image: url(http://placehold.it/390x260)">
+                          <span class="video-btn"></span>
+                        </div>
+                      </a>
                     </div>
-                  </div>
-                  <a href="#">
-                    <div class="sentence__video" style="background-image: url(http://placehold.it/390x260)">
-                      <span class="video-btn"></span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="sentence-wrapp">
-            <div class="container">
-              <div class="row">
-                <div class="sentence__item green">
-                  <div class="sentence__text">
-                    <div class="table-block">
-                      <div class="block-vertical">
-                        <h2 class="font-medium">ваши</h2>
-                        <h1>
-                          <b>гарантии</b>
-                        </h1>
-                        <p>Для Вас мы разработали собственные  стандарты качества, по которым наши рабочие выполняют работу, а технадзор ее принимает.</p>
-                        <p>Наши 9 чек листов по приемке работ содержат более 300 моментов, которые необходимо учесть и будьте уверены, недочетов не останется. Мы уверены в качестве и поэтому даем 10 лет гарантии на свои работы. А клиентам с самыми высокими тербованиями предоставляем страховые полиса от ВТБ.</p>
-                        <a href="#" class="more font-medium">
-                          <span class="middle more-icon"></span>
-                          <span class="middle">Подробнее о стандартах качества</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#">
-                    <div class="sentence__video" style="background-image: url(http://placehold.it/390x260)">
-                      <span class="video-btn"></span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="sentence-wrapp">
-            <div class="container">
-              <div class="row">
-                <div class="sentence__item grey">
-                  <div class="sentence__text">
-                    <div class="table-block">
-                      <div class="block-vertical">
-                        <h1>
-                          <b>Цена</b>
-                        </h1>
-                        <p>
-                          Мы не работаем по «Элитным ценам», но и не опускаемся до «дешево». 
-                        </p>
-                        <p>
-                          Стоимость основных строительных работ у нас зафиксирована на комфортной отметке.  Для требовательных клиентов у нас есть большой набор фишек и решений, представленных в нашем каталоге.
-                        </p>
-                        <p>
-                          Рассрочка от 6 до 24 месяцев. Пользуйтесь!
-                        </p>
-                        <a href="#" class="more font-medium">
-                          <span class="middle more-icon"></span>
-                          <span class="middle">Подробнее о стандартах качества</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#">
-                    <div class="sentence__banner" style="background-image: url(http://placehold.it/450x250)"></div>
-                  </a>
-                  <div class="sentence__info">
-                    <div class="sentence__info__header">
-                      <h2 class="middle">
-                        <b>Халява</b>
-                      </h2>
-                    </div>
-                    <p>Наши маркетологи очень настаивают на акциях по ремонту квартир, скидках и распродажах, говорят, что это ОЧЕНЬ  важно. Ну, покажите, что это не так!  Что вы не попросите скидку, откажитесь от рассрочки и не захотите забирать подарок в конце ремонта :)</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          
-          
-          
+            </li>
+            <li>
+              <div class="sentence-wrapp">
+                <div class="container">
+                  <div class="row">
+                    <div class="sentence__item green">
+                      <div class="sentence__text">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <h2 class="font-medium">ваши</h2>
+                            <h1>
+                              <b>гарантии</b>
+                            </h1>
+                            <p>Для Вас мы разработали собственные  стандарты качества, по которым наши рабочие выполняют работу, а технадзор ее принимает.</p>
+                            <p>Наши 9 чек листов по приемке работ содержат более 300 моментов, которые необходимо учесть и будьте уверены, недочетов не останется. Мы уверены в качестве и поэтому даем 10 лет гарантии на свои работы. А клиентам с самыми высокими тербованиями предоставляем страховые полиса от ВТБ.</p>
+                            <a href="#" class="more font-medium">
+                              <span class="middle more-icon"></span>
+                              <span class="middle">Подробнее о стандартах качества</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#">
+                        <div class="sentence__video" style="background-image: url(http://placehold.it/390x260)">
+                          <span class="video-btn"></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sentence-wrapp">
+                <div class="container">
+                  <div class="row">
+                    <div class="sentence__item grey">
+                      <div class="sentence__text">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <h1>
+                              <b>Цена</b>
+                            </h1>
+                            <p>
+                              Мы не работаем по «Элитным ценам», но и не опускаемся до «дешево». 
+                            </p>
+                            <p>
+                              Стоимость основных строительных работ у нас зафиксирована на комфортной отметке.  Для требовательных клиентов у нас есть большой набор фишек и решений, представленных в нашем каталоге.
+                            </p>
+                            <p>
+                              Рассрочка от 6 до 24 месяцев. Пользуйтесь!
+                            </p>
+                            <a href="#" class="more font-medium">
+                              <span class="middle more-icon"></span>
+                              <span class="middle">Подробнее о стандартах качества</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#">
+                        <div class="sentence__banner" style="background-image: url(http://placehold.it/450x250)"></div>
+                      </a>
+                      <div class="sentence__info hidden-sm">
+                        <div class="sentence__info__header">
+                          <h2 class="middle">
+                            <b>Халява</b>
+                          </h2>
+                        </div>
+                        <p>Наши маркетологи очень настаивают на акциях по ремонту квартир, скидках и распродажах, говорят, что это ОЧЕНЬ  важно. Ну, покажите, что это не так!  Что вы не попросите скидку, откажитесь от рассрочки и не захотите забирать подарок в конце ремонта :)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul> 
         </div>
         <!-- sentence -->
       <div class="container">
         <div class="row">
           <div class="design text-container">
             <div class="design-wrapp clearfix">
-              <div class="col-sm-7">
+              <div class="col-md-7">
                 <div class="design__text">
                   <h2><b>Дизайн интерьера</b></h2>
                   <p class="font-medium">
@@ -304,7 +422,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm-5">
+              <div class="col-md-5">
                 <div class="design__img">
                   <img src="img/design.png" alt="">
                 </div>
@@ -345,25 +463,27 @@
               </li>
             </ul>
 
-            <div class="thumb" id="works-thumb">
-              <a data-slide-index="0" class="thumb-item" href="">
-                <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-              </a>
-              <a data-slide-index="1" class="thumb-item" href="">
-                <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-              </a>
-              <a data-slide-index="2" class="thumb-item" href="">
-                <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-              </a>
-              <a data-slide-index="3" class="thumb-item" href="">
-                <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-              </a>
-              <a data-slide-index="4" class="thumb-item" href="">
-                <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-              </a>
-              <a data-slide-index="5" class="thumb-item" href="">
-                <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-              </a>
+            <div class="thumb">
+              <div class="thumb-wrapp clearfix" id="works-thumb">
+                <a data-slide-index="0" class="thumb-item" href="">
+                  <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                </a>
+                <a data-slide-index="1" class="thumb-item" href="">
+                  <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                </a>
+                <a data-slide-index="2" class="thumb-item" href="">
+                  <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                </a>
+                <a data-slide-index="3" class="thumb-item" href="">
+                  <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                </a>
+                <a data-slide-index="4" class="thumb-item" href="">
+                  <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                </a>
+                <a data-slide-index="5" class="thumb-item" href="">
+                  <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                </a>
+              </div>
             </div>
           </div>
           <!-- works -->
@@ -372,13 +492,13 @@
       <div class="container">
         <div class="row">
           <div class="director-item text-container clearfix">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-5">
               <div class="bg-director"></div>
               <div class="director__img">
                 <img src="img/director-img.png" alt="">
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 co-sm-7">
               <div class="director-text">
                 <h2 class="font-medium">
                   Слово директору

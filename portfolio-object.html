@@ -17,13 +17,19 @@
     <header class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="header-wrapp">
-    				<div class="logo">
+    			<div class="header-wrapp padding-xs">
+    				<div class="nav-btn visible-sm">
+    					<a href="#" class="navbar-toggle">
+    						<span class="middle burger-icon"></span>
+    						<span class="middle">меню</span>
+    					</a>
+    				</div>
+    				<div class="logo hidden-xs">
     					<a href="#">
     						<img src="img/logo.png" alt="">
     					</a>
     				</div>
-    				<div class="header__info">
+    				<div class="header__info hidden-sm">
     					<div class="header__info__item middle">
     						<div class="header__info__number block-vertical">
     							<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
@@ -51,7 +57,7 @@
     					</div>
     				</div>
     				<div class="header__contacts">
-    					<div class="header__tel font-medium">
+    					<div class="header__tel hidden-xs font-medium">
     						+7 (812) 400-77-20
     					</div>
     					<a href="#" class="header-btn">
@@ -63,7 +69,7 @@
     		</div>
     	</div>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
     	<div class="container">
     		<div class="row">
     			<ul class="nav__menu">
@@ -85,12 +91,47 @@
     		</div>
     	</div>
     </nav>
+    <div class="visible-xs logo">
+    	<a href="#">
+    		<img src="img/logo.png" alt="">
+    	</a>
+    </div>
+    <div class="header__tel visible-xs font-medium">
+    	+7 (812) 400-77-20
+    </div>
+    <div class="header__info visible-xs">
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			лет гарантии
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number2.png)"><b>24</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			месяца рассрочка
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number3.png)"><b>9</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			собственных <br>
+    			стандартов качества
+    		</div>
+    	</div>
+    </div>
     <div class="content">
-      <div class="top-header">
+      <div class="top-header top-header_center">
         <div class="container">
           <div class="row">
             <div class="top-header-wrapp">
-              <ul class="breadcrumbs clearfix">
+              <ul class="breadcrumbs hidden-sm clearfix">
                 <li>
                   <a href="#" class="middle">Главная</a>
                   <span class="middle bread-arrow"></span>
@@ -99,13 +140,17 @@
                   Портфолио
                 </li>
               </ul>
-              <div class="top-header-title">
-                Проект:
-                <h3>
-                  Кудрово. 3-х комнатная квартира в современной классике.
-                </h3>
+              <div class="top-header-title top-header-title_center">
+                <div class="table-block">
+                  <div class="block-vertical">
+                    Проект:
+                    <h3>
+                      Кудрово. 3-х комнатная квартира в современной классике.
+                    </h3>
+                  </div>
+                </div>
               </div>
-              <div class="view view-no-active">
+              <div class="view view-no-active hidden-sm">
                 <a href="#" class="view-item view1 middle active"></a>
                 <a href="#" class="view-item view2 middle"></a>
                 <a href="#" class="view-item view3 middle"></a>
@@ -126,7 +171,7 @@
       <div class="material">
         <div class="container">
           <div class="row">
-            <div class="material-wrapp">
+            <div class="material-wrapp" id="material">
               <div class="material__item">
                 <div class="material__icon table-cell">
                   <img src="img/mat1.png" alt="">
@@ -229,25 +274,27 @@
                   </li>
                 </ul>
 
-                <div class="thumb" id="works-thumb">
-                  <a data-slide-index="0" class="thumb-item" href="">
-                    <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-                  </a>
-                  <a data-slide-index="1" class="thumb-item" href="">
-                    <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-                  </a>
-                  <a data-slide-index="2" class="thumb-item" href="">
-                    <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-                  </a>
-                  <a data-slide-index="3" class="thumb-item" href="">
-                    <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-                  </a>
-                  <a data-slide-index="4" class="thumb-item" href="">
-                    <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-                  </a>
-                  <a data-slide-index="5" class="thumb-item" href="">
-                    <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
-                  </a>
+                <div class="thumb">
+                  <div class="thumb-wrapp clearfix" id="works-thumb">
+                    <a data-slide-index="0" class="thumb-item" href="">
+                      <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                    </a>
+                    <a data-slide-index="1" class="thumb-item" href="">
+                      <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                    </a>
+                    <a data-slide-index="2" class="thumb-item" href="">
+                      <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                    </a>
+                    <a data-slide-index="3" class="thumb-item" href="">
+                      <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                    </a>
+                    <a data-slide-index="4" class="thumb-item" href="">
+                      <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                    </a>
+                    <a data-slide-index="5" class="thumb-item" href="">
+                      <div class="thumb-item__img" style="background-image: url(http://placehold.it/165x45)"></div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <!-- works -->

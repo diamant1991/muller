@@ -17,13 +17,19 @@
     <header class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="header-wrapp">
-    				<div class="logo">
+    			<div class="header-wrapp padding-xs">
+    				<div class="nav-btn visible-sm">
+    					<a href="#" class="navbar-toggle">
+    						<span class="middle burger-icon"></span>
+    						<span class="middle">меню</span>
+    					</a>
+    				</div>
+    				<div class="logo hidden-xs">
     					<a href="#">
     						<img src="img/logo.png" alt="">
     					</a>
     				</div>
-    				<div class="header__info">
+    				<div class="header__info hidden-sm">
     					<div class="header__info__item middle">
     						<div class="header__info__number block-vertical">
     							<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
@@ -51,7 +57,7 @@
     					</div>
     				</div>
     				<div class="header__contacts">
-    					<div class="header__tel font-medium">
+    					<div class="header__tel hidden-xs font-medium">
     						+7 (812) 400-77-20
     					</div>
     					<a href="#" class="header-btn">
@@ -63,7 +69,7 @@
     		</div>
     	</div>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
     	<div class="container">
     		<div class="row">
     			<ul class="nav__menu">
@@ -85,6 +91,41 @@
     		</div>
     	</div>
     </nav>
+    <div class="visible-xs logo">
+    	<a href="#">
+    		<img src="img/logo.png" alt="">
+    	</a>
+    </div>
+    <div class="header__tel visible-xs font-medium">
+    	+7 (812) 400-77-20
+    </div>
+    <div class="header__info visible-xs">
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			лет гарантии
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number2.png)"><b>24</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			месяца рассрочка
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number3.png)"><b>9</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			собственных <br>
+    			стандартов качества
+    		</div>
+    	</div>
+    </div>
     <div class="content">
       <div class="slider-item">
         <div class="container">
@@ -120,31 +161,33 @@
                   </div>
                 </div>
               </div>
-              <div class="price-item-link">
-                <div class="table-block">
-                  <div class="block-vertical">
-                    <a href="#">
-                      <span class="table-cell price-icon">
-                        <img src="img/price1.png" alt="">
-                      </span>
-                      <span class="table-cell">
-                        <span class="price-name">Калькулятор стоимости ремонта</span>
-                      </span>
-                    </a>
+              <div class="price-item-block">
+                <div class="price-item-link">
+                  <div class="table-block">
+                    <div class="block-vertical">
+                      <a href="#">
+                        <span class="table-cell price-icon">
+                          <img src="img/price1.png" alt="">
+                        </span>
+                        <span class="table-cell">
+                          <span class="price-name">Калькулятор стоимости ремонта</span>
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="price-item-link">
-                <div class="table-block">
-                  <div class="block-vertical">
-                    <a href="#">
-                      <span class="table-cell price-icon">
-                        <img src="img/price2.png" alt="">
-                      </span>
-                      <span class="table-cell">
-                        <span class="price-name">Стоимость пакетов на сервис</span>
-                      </span>
-                    </a>
+                <div class="price-item-link">
+                  <div class="table-block">
+                    <div class="block-vertical">
+                      <a href="#">
+                        <span class="table-cell price-icon">
+                          <img src="img/price2.png" alt="">
+                        </span>
+                        <span class="table-cell">
+                          <span class="price-name">Стоимость пакетов на сервис</span>
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -155,7 +198,7 @@
                       <div>Образец сметы</div> 
                       <a href="#">скачать</a>
                     </span>
-                    <span class="middle">
+                    <span class="middle pdf-icon">
                       <img src="img/pdf-icon.png" alt="">
                     </span>
                   </div>
@@ -171,7 +214,8 @@
             <h2>Примеры расчета стоимости квартир</h2>
             <div class="calculation__item calculation_blue">
               <div class="calculation__slider">
-                
+                <div class="calculation__slider__test">
+                </div>
               </div>
               <div class="calculation__descr">
                 <div class="calculation__title">
@@ -199,7 +243,7 @@
                   </div>
                 </div>
                 <div class="calculation__price clearfix">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="row calculation__price__item">
                       <span class="table-cell calculation__price__icon">
                         <img src="img/calc1.png" alt="">
@@ -209,7 +253,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="row calculation__price__item">
                       <span class="table-cell calculation__price__icon">
                         <img src="img/calc2.png" alt="">
@@ -222,14 +266,15 @@
                 </div>
                 <div class="calculation__total">
                   <div class="table-block">
-                    <div class="block-vertical">Итого:<b>450 000 ₽ </b>(9500 ₽/м2)</div>
+                    <div class="block-vertical">Итого:<b>450 000 ₽ </b><br>(9500 ₽/м2)</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="calculation__item calculation_orange">
               <div class="calculation__slider">
-                
+                <div class="calculation__slider__test">
+                </div>
               </div>
               <div class="calculation__descr">
                 <div class="calculation__title">
@@ -257,7 +302,7 @@
                   </div>
                 </div>
                 <div class="calculation__price clearfix">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="row calculation__price__item">
                       <span class="table-cell calculation__price__icon">
                         <img src="img/calc1.png" alt="">
@@ -267,7 +312,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="row calculation__price__item">
                       <span class="table-cell calculation__price__icon">
                         <img src="img/calc2.png" alt="">
@@ -280,7 +325,7 @@
                 </div>
                 <div class="calculation__total">
                   <div class="table-block">
-                    <div class="block-vertical">Итого:<b>450 000 ₽ </b>(9500 ₽/м2)</div>
+                    <div class="block-vertical">Итого:<b>450 000 ₽ </b><br>(9500 ₽/м2)</div>
                   </div>
                 </div>
               </div>
@@ -293,190 +338,451 @@
         <div class="container">
           <div class="row">
             <h2>Каталог элементов ремонта</h2>
-            <div class="catalog-wrapp">
-              <div class="catalog__item clearfix">
-                <div class="col-md-4">
-                  <div class="row catalog__block">
-                    <div class="catalog__info">
-                      <h3>
-                        <b>Коллектор серии Люкс</b>
-                      </h3>
-                      <p>Предназначен для качественной разводки водоснабжения по квартире.</p>
-                      <div class="catalog__func">
-                        <div class="catalog__func__title">Выполняет функции:</div>
-                        <p>Возможность отключать приборы по очереди. Механическая очистка воды.</p>
+            <div class="catalog-carousel">
+              <ul class="bxslider" id="catalog-carousel">
+                <li>
+                  <div class="catalog-wrapp">
+                    <div class="catalog__item clearfix">
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__info">
+                            <h3>
+                              <b>Коллектор серии Люкс</b>
+                            </h3>
+                            <p>Предназначен для качественной разводки водоснабжения по квартире.</p>
+                            <div class="catalog__func">
+                              <div class="catalog__func__title">Выполняет функции:</div>
+                              <p>Возможность отключать приборы по очереди. Механическая очистка воды.</p>
+                            </div>
+                            <ul class="catalog__info__list">
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость работы </div>
+                                <div class="pull-right catalog__info__value">8 800</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость материалов от </div>
+                                <div class="pull-right catalog__info__value">24 500</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Срок исполнения от </div>
+                                <div class="pull-right catalog__info__value">5 дней</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                      <ul class="catalog__info__list">
-                        <li class="clearfix">
-                          <div class="pull-left">Стоимость работы </div>
-                          <div class="pull-right catalog__info__value">8 800</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="pull-left">Стоимость материалов от </div>
-                          <div class="pull-right catalog__info__value">24 500</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="pull-left">Срок исполнения от </div>
-                          <div class="pull-right catalog__info__value">5 дней</div>
-                        </li>
-                      </ul>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__img">
+                            <div class="zoom"></div>
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="img/1_b.jpg" class="fancybox">
+                                  <img src="https://placehold.it/260x200" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__right">
+                            <div class="catalog__thumb hidden-sm clearfix">
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog__video">
+                              <iframe width="100%" height="150" src="https://www.youtube.com/embed/5QPZI2qn__k" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="row catalog__block">
-                    <div class="catalog__img">
+                    <a href="#" class="est-link">
                       <div class="table-block">
                         <div class="block-vertical">
-                          <img src="https://placehold.it/260x200" alt="">
+                          <span class="plus middle">+</span>
+                           <span class="middle">В смету</span>
                         </div>
+                      </div>
+                    </a>
+                    <div class="catalog__text">
+                      <div class="table-block">
+                        <div class="block-vertical">Это совершенный коллекторный узел распределения воды – он продуман как с технической точки зрения, так и с эстетической, ведь в нем даже есть освещение и выполнен он на белой плитке! Коллектор расположен за "люком-невидимкой" и имеет очень удобный доступ.   благодаря фильтрам очистки холодная и горячая вода всегда будет прозрачной и чистой. Скрытые трубы в санузле улучшают внешний вид и оставляют больше простора для полезных вещей. Благодаря специальным коллекторам каждый прибор, потребляющий воду, можно выключить отдельно.</div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="row catalog__block">
-                    <div class="catalog__right">
-                      <div class="catalog__thumb clearfix">
-                        <div class="col-md-4">
-                          <div class="row catalog__thumb__block">
-                            <div class="catalog__thumb__item">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <img src="https://placehold.it/90x80" alt="">
-                                </div>
+                </li>
+                <li>
+                  <div class="catalog-wrapp">
+                    <div class="catalog__item clearfix">
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__info">
+                            <h3>
+                              <b>Коллектор серии Люкс</b>
+                            </h3>
+                            <p>Предназначен для качественной разводки водоснабжения по квартире.</p>
+                            <div class="catalog__func">
+                              <div class="catalog__func__title">Выполняет функции:</div>
+                              <p>Возможность отключать приборы по очереди. Механическая очистка воды.</p>
+                            </div>
+                            <ul class="catalog__info__list">
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость работы </div>
+                                <div class="pull-right catalog__info__value">8 800</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость материалов от </div>
+                                <div class="pull-right catalog__info__value">24 500</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Срок исполнения от </div>
+                                <div class="pull-right catalog__info__value">5 дней</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__img">
+                            <div class="zoom"></div>
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="img/1_b.jpg" class="fancybox">
+                                  <img src="https://placehold.it/260x200" alt="">
+                                </a>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
-                          <div class="row catalog__thumb__block">
-                            <div class="catalog__thumb__item">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <img src="https://placehold.it/90x80" alt="">
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__right">
+                            <div class="catalog__thumb hidden-sm clearfix">
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="row catalog__thumb__block">
-                            <div class="catalog__thumb__item">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <img src="https://placehold.it/90x80" alt="">
-                                </div>
-                              </div>
+                            <div class="catalog__video">
+                              <iframe width="100%" height="150" src="https://www.youtube.com/embed/5QPZI2qn__k" frameborder="0" allowfullscreen></iframe>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="catalog__video">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/5QPZI2qn__k" frameborder="0" allowfullscreen></iframe>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__text">
-                <div class="table-block">
-                  <div class="block-vertical">Это совершенный коллекторный узел распределения воды – он продуман как с технической точки зрения, так и с эстетической, ведь в нем даже есть освещение и выполнен он на белой плитке! Коллектор расположен за "люком-невидимкой" и имеет очень удобный доступ.   благодаря фильтрам очистки холодная и горячая вода всегда будет прозрачной и чистой. Скрытые трубы в санузле улучшают внешний вид и оставляют больше простора для полезных вещей. Благодаря специальным коллекторам каждый прибор, потребляющий воду, можно выключить отдельно.</div>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-wrapp">
-              <div class="catalog__item clearfix">
-                <div class="col-md-4">
-                  <div class="row catalog__block">
-                    <div class="catalog__info">
-                      <h3>
-                        <b>Коллектор серии Люкс</b>
-                      </h3>
-                      <p>Предназначен для качественной разводки водоснабжения по квартире.</p>
-                      <div class="catalog__func">
-                        <div class="catalog__func__title">Выполняет функции:</div>
-                        <p>Возможность отключать приборы по очереди. Механическая очистка воды.</p>
-                      </div>
-                      <ul class="catalog__info__list">
-                        <li class="clearfix">
-                          <div class="pull-left">Стоимость работы </div>
-                          <div class="pull-right catalog__info__value">8 800</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="pull-left">Стоимость материалов от </div>
-                          <div class="pull-right catalog__info__value">24 500</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="pull-left">Срок исполнения от </div>
-                          <div class="pull-right catalog__info__value">5 дней</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="row catalog__block">
-                    <div class="catalog__img">
+                    <a href="#" class="est-link">
                       <div class="table-block">
                         <div class="block-vertical">
-                          <img src="https://placehold.it/260x200" alt="">
+                          <span class="plus middle">+</span>
+                           <span class="middle">В смету</span>
                         </div>
+                      </div>
+                    </a>
+                    <div class="catalog__text">
+                      <div class="table-block">
+                        <div class="block-vertical">Это совершенный коллекторный узел распределения воды – он продуман как с технической точки зрения, так и с эстетической, ведь в нем даже есть освещение и выполнен он на белой плитке! Коллектор расположен за "люком-невидимкой" и имеет очень удобный доступ.   благодаря фильтрам очистки холодная и горячая вода всегда будет прозрачной и чистой. Скрытые трубы в санузле улучшают внешний вид и оставляют больше простора для полезных вещей. Благодаря специальным коллекторам каждый прибор, потребляющий воду, можно выключить отдельно.</div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="row catalog__block">
-                    <div class="catalog__right">
-                      <div class="catalog__thumb clearfix">
-                        <div class="col-md-4">
-                          <div class="row catalog__thumb__block">
-                            <div class="catalog__thumb__item">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <img src="https://placehold.it/90x80" alt="">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="row catalog__thumb__block">
-                            <div class="catalog__thumb__item">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <img src="https://placehold.it/90x80" alt="">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="row catalog__thumb__block">
-                            <div class="catalog__thumb__item">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <img src="https://placehold.it/90x80" alt="">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="catalog__video">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/5QPZI2qn__k" frameborder="0" allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__text">
-                <div class="table-block">
-                  <div class="block-vertical">Это совершенный коллекторный узел распределения воды – он продуман как с технической точки зрения, так и с эстетической, ведь в нем даже есть освещение и выполнен он на белой плитке! Коллектор расположен за "люком-невидимкой" и имеет очень удобный доступ.   благодаря фильтрам очистки холодная и горячая вода всегда будет прозрачной и чистой. Скрытые трубы в санузле улучшают внешний вид и оставляют больше простора для полезных вещей. Благодаря специальным коллекторам каждый прибор, потребляющий воду, можно выключить отдельно.</div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
+            <div class="catalog-carousel">
+              <ul class="bxslider" id="catalog-carousel2">
+                <li>
+                  <div class="catalog-wrapp">
+                    <div class="catalog__item clearfix">
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__info">
+                            <h3>
+                              <b>Коллектор серии Люкс</b>
+                            </h3>
+                            <p>Предназначен для качественной разводки водоснабжения по квартире.</p>
+                            <div class="catalog__func">
+                              <div class="catalog__func__title">Выполняет функции:</div>
+                              <p>Возможность отключать приборы по очереди. Механическая очистка воды.</p>
+                            </div>
+                            <ul class="catalog__info__list">
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость работы </div>
+                                <div class="pull-right catalog__info__value">8 800</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость материалов от </div>
+                                <div class="pull-right catalog__info__value">24 500</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Срок исполнения от </div>
+                                <div class="pull-right catalog__info__value">5 дней</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__img">
+                            <div class="zoom"></div>
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="img/1_b.jpg" class="fancybox">
+                                  <img src="https://placehold.it/260x200" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__right">
+                            <div class="catalog__thumb hidden-sm clearfix">
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog__video">
+                              <iframe width="100%" height="150" src="https://www.youtube.com/embed/5QPZI2qn__k" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="est-link">
+                      <div class="table-block">
+                        <div class="block-vertical">
+                          <span class="plus middle">+</span>
+                           <span class="middle">В смету</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="catalog__text">
+                      <div class="table-block">
+                        <div class="block-vertical">Это совершенный коллекторный узел распределения воды – он продуман как с технической точки зрения, так и с эстетической, ведь в нем даже есть освещение и выполнен он на белой плитке! Коллектор расположен за "люком-невидимкой" и имеет очень удобный доступ.   благодаря фильтрам очистки холодная и горячая вода всегда будет прозрачной и чистой. Скрытые трубы в санузле улучшают внешний вид и оставляют больше простора для полезных вещей. Благодаря специальным коллекторам каждый прибор, потребляющий воду, можно выключить отдельно.</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="catalog-wrapp">
+                    <div class="catalog__item clearfix">
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__info">
+                            <h3>
+                              <b>Коллектор серии Люкс</b>
+                            </h3>
+                            <p>Предназначен для качественной разводки водоснабжения по квартире.</p>
+                            <div class="catalog__func">
+                              <div class="catalog__func__title">Выполняет функции:</div>
+                              <p>Возможность отключать приборы по очереди. Механическая очистка воды.</p>
+                            </div>
+                            <ul class="catalog__info__list">
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость работы </div>
+                                <div class="pull-right catalog__info__value">8 800</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Стоимость материалов от </div>
+                                <div class="pull-right catalog__info__value">24 500</div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="pull-left">Срок исполнения от </div>
+                                <div class="pull-right catalog__info__value">5 дней</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__img">
+                            <div class="zoom"></div>
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="img/1_b.jpg" class="fancybox">
+                                  <img src="https://placehold.it/260x200" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row catalog__block">
+                          <div class="catalog__right">
+                            <div class="catalog__thumb hidden-sm clearfix">
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="row catalog__thumb__block">
+                                  <div class="catalog__thumb__item">
+                                    <div class="table-block">
+                                      <div class="block-vertical">
+                                        <img src="https://placehold.it/90x80" alt="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog__video">
+                              <iframe width="100%" height="150" src="https://www.youtube.com/embed/5QPZI2qn__k" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="est-link">
+                      <div class="table-block">
+                        <div class="block-vertical">
+                          <span class="plus middle">+</span>
+                           <span class="middle">В смету</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="catalog__text">
+                      <div class="table-block">
+                        <div class="block-vertical">Это совершенный коллекторный узел распределения воды – он продуман как с технической точки зрения, так и с эстетической, ведь в нем даже есть освещение и выполнен он на белой плитке! Коллектор расположен за "люком-невидимкой" и имеет очень удобный доступ.   благодаря фильтрам очистки холодная и горячая вода всегда будет прозрачной и чистой. Скрытые трубы в санузле улучшают внешний вид и оставляют больше простора для полезных вещей. Благодаря специальным коллекторам каждый прибор, потребляющий воду, можно выключить отдельно.</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- catalog -->
+      <div class="pagination">
+        <div class="container">
+          <div class="row">
+            <ul class="pagination__list middle clearfix">
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+            </ul>
           </div>
         </div>
       </div>

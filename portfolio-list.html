@@ -17,13 +17,19 @@
     <header class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="header-wrapp">
-    				<div class="logo">
+    			<div class="header-wrapp padding-xs">
+    				<div class="nav-btn visible-sm">
+    					<a href="#" class="navbar-toggle">
+    						<span class="middle burger-icon"></span>
+    						<span class="middle">меню</span>
+    					</a>
+    				</div>
+    				<div class="logo hidden-xs">
     					<a href="#">
     						<img src="img/logo.png" alt="">
     					</a>
     				</div>
-    				<div class="header__info">
+    				<div class="header__info hidden-sm">
     					<div class="header__info__item middle">
     						<div class="header__info__number block-vertical">
     							<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
@@ -51,7 +57,7 @@
     					</div>
     				</div>
     				<div class="header__contacts">
-    					<div class="header__tel font-medium">
+    					<div class="header__tel hidden-xs font-medium">
     						+7 (812) 400-77-20
     					</div>
     					<a href="#" class="header-btn">
@@ -63,7 +69,7 @@
     		</div>
     	</div>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
     	<div class="container">
     		<div class="row">
     			<ul class="nav__menu">
@@ -85,12 +91,47 @@
     		</div>
     	</div>
     </nav>
+    <div class="visible-xs logo">
+    	<a href="#">
+    		<img src="img/logo.png" alt="">
+    	</a>
+    </div>
+    <div class="header__tel visible-xs font-medium">
+    	+7 (812) 400-77-20
+    </div>
+    <div class="header__info visible-xs">
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			лет гарантии
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number2.png)"><b>24</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			месяца рассрочка
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number3.png)"><b>9</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			собственных <br>
+    			стандартов качества
+    		</div>
+    	</div>
+    </div>
     <div class="content">
       <div class="top-header">
         <div class="container">
           <div class="row">
             <div class="top-header-wrapp">
-              <ul class="breadcrumbs clearfix">
+              <ul class="breadcrumbs hidden-sm clearfix">
                 <li>
                   <a href="#" class="middle">Главная</a>
                   <span class="middle bread-arrow"></span>
@@ -107,7 +148,7 @@
                   <img src="img/arrow-btn.png" alt="">
                 </div>
               </div>
-              <div class="view">
+              <div class="view hidden-xs">
                 <a href="#" class="view-item view1 middle active"></a>
                 <a href="#" class="view-item view2 middle"></a>
                 <a href="#" class="view-item view3 middle"></a>
@@ -198,12 +239,12 @@
           <div class="row">
             <div class="portfolio-wrapp clearfix">
               <div class="portfolio-row clearfix">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <div class="row portfolio-block">
                     <div class="portfolio-item">
                       <a href="#">
                         <img src="img/port.jpg" alt="">
-                        <div class="portfolio-descr">
+                        <div class="portfolio-descr hidden-xs">
                           <div class="portfolio-title">Уютный лофт</div>
                           <div class="portfolio-text">в жилом комплексе Капитал</div>
                           <span class="portfolio-more">Подробнее</span>
@@ -216,50 +257,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <div class="row portfolio-block">
                     <div class="portfolio-item">
                       <a href="#">
                         <img src="img/port.jpg" alt="">
-                        <div class="portfolio-descr">
-                          <div class="portfolio-title">Уютный лофт</div>
-                          <div class="portfolio-text">в жилом комплексе Капитал</div>
-                          <span class="portfolio-more">Подробнее</span>
-                          <div class="portfolio-count">
-                            <div class="photo-icon"></div>
-                            <div class="number">7</div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio-row clearfix">
-                <div class="col-md-6">
-                  <div class="row portfolio-block">
-                    <div class="portfolio-item">
-                      <a href="#">
-                        <img src="img/port.jpg" alt="">
-                        <div class="portfolio-descr">
-                          <div class="portfolio-title">Уютный лофт</div>
-                          <div class="portfolio-text">в жилом комплексе Капитал</div>
-                          <span class="portfolio-more">Подробнее</span>
-                          <div class="portfolio-count">
-                            <div class="photo-icon"></div>
-                            <div class="number">7</div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="row portfolio-block">
-                    <div class="portfolio-item">
-                      <a href="#">
-                        <img src="img/port.jpg" alt="">
-                        <div class="portfolio-descr">
+                        <div class="portfolio-descr hidden-xs">
                           <div class="portfolio-title">Уютный лофт</div>
                           <div class="portfolio-text">в жилом комплексе Капитал</div>
                           <span class="portfolio-more">Подробнее</span>
@@ -274,12 +277,12 @@
                 </div>
               </div>
               <div class="portfolio-row clearfix">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <div class="row portfolio-block">
                     <div class="portfolio-item">
                       <a href="#">
                         <img src="img/port.jpg" alt="">
-                        <div class="portfolio-descr">
+                        <div class="portfolio-descr hidden-xs">
                           <div class="portfolio-title">Уютный лофт</div>
                           <div class="portfolio-text">в жилом комплексе Капитал</div>
                           <span class="portfolio-more">Подробнее</span>
@@ -292,12 +295,50 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <div class="row portfolio-block">
                     <div class="portfolio-item">
                       <a href="#">
                         <img src="img/port.jpg" alt="">
-                        <div class="portfolio-descr">
+                        <div class="portfolio-descr hidden-xs">
+                          <div class="portfolio-title">Уютный лофт</div>
+                          <div class="portfolio-text">в жилом комплексе Капитал</div>
+                          <span class="portfolio-more">Подробнее</span>
+                          <div class="portfolio-count">
+                            <div class="photo-icon"></div>
+                            <div class="number">7</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-row clearfix">
+                <div class="col-sm-6">
+                  <div class="row portfolio-block">
+                    <div class="portfolio-item">
+                      <a href="#">
+                        <img src="img/port.jpg" alt="">
+                        <div class="portfolio-descr hidden-xs">
+                          <div class="portfolio-title">Уютный лофт</div>
+                          <div class="portfolio-text">в жилом комплексе Капитал</div>
+                          <span class="portfolio-more">Подробнее</span>
+                          <div class="portfolio-count">
+                            <div class="photo-icon"></div>
+                            <div class="number">7</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="row portfolio-block">
+                    <div class="portfolio-item">
+                      <a href="#">
+                        <img src="img/port.jpg" alt="">
+                        <div class="portfolio-descr hidden-xs">
                           <div class="portfolio-title">Уютный лофт</div>
                           <div class="portfolio-text">в жилом комплексе Капитал</div>
                           <span class="portfolio-more">Подробнее</span>

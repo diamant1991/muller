@@ -17,13 +17,19 @@
     <header class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="header-wrapp">
-    				<div class="logo">
+    			<div class="header-wrapp padding-xs">
+    				<div class="nav-btn visible-sm">
+    					<a href="#" class="navbar-toggle">
+    						<span class="middle burger-icon"></span>
+    						<span class="middle">меню</span>
+    					</a>
+    				</div>
+    				<div class="logo hidden-xs">
     					<a href="#">
     						<img src="img/logo.png" alt="">
     					</a>
     				</div>
-    				<div class="header__info">
+    				<div class="header__info hidden-sm">
     					<div class="header__info__item middle">
     						<div class="header__info__number block-vertical">
     							<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
@@ -51,7 +57,7 @@
     					</div>
     				</div>
     				<div class="header__contacts">
-    					<div class="header__tel font-medium">
+    					<div class="header__tel hidden-xs font-medium">
     						+7 (812) 400-77-20
     					</div>
     					<a href="#" class="header-btn">
@@ -63,7 +69,7 @@
     		</div>
     	</div>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
     	<div class="container">
     		<div class="row">
     			<ul class="nav__menu">
@@ -85,12 +91,47 @@
     		</div>
     	</div>
     </nav>
+    <div class="visible-xs logo">
+    	<a href="#">
+    		<img src="img/logo.png" alt="">
+    	</a>
+    </div>
+    <div class="header__tel visible-xs font-medium">
+    	+7 (812) 400-77-20
+    </div>
+    <div class="header__info visible-xs">
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number1.png)"><b>10</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			лет гарантии
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number2.png)"><b>24</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			месяца рассрочка
+    		</div>
+    	</div>
+    	<div class="header__info__item">
+    		<div class="header__info__number block-vertical">
+    			<div style="background-image: url(img/bg-number3.png)"><b>9</b></div>
+    		</div>
+    		<div class="header__info__text font-light block-vertical">
+    			собственных <br>
+    			стандартов качества
+    		</div>
+    	</div>
+    </div>
     <div class="content">
-      <div class="top-header">
+      <div class="top-header top-header_center">
         <div class="container">
           <div class="row">
             <div class="top-header-wrapp">
-              <ul class="breadcrumbs clearfix">
+              <ul class="breadcrumbs hidden-sm clearfix">
                 <li>
                   <a href="#" class="middle">Главная</a>
                   <span class="middle bread-arrow"></span>
@@ -99,15 +140,19 @@
                   Портфолио
                 </li>
               </ul>
-              <div class="top-header-title">
-                <h2>
-                  Ремонт квартир
-                </h2>
-                <div class="advantages-btn">
-                  <img src="img/arrow-btn.png" alt="">
+              <div class="top-header-title top-header-title_center">
+                <div class="table-block">
+                  <div class="block-vertical">
+                    <h2>
+                      Ремонт квартир
+                    </h2>
+                    <div class="advantages-btn">
+                      <img src="img/arrow-btn.png" alt="">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="view view-no-active">
+              <div class="view view-no-active hidden-sm">
                 <a href="#" class="view-item view1 middle active"></a>
                 <a href="#" class="view-item view2 middle"></a>
                 <a href="#" class="view-item view3 middle"></a>
@@ -123,7 +168,12 @@
               Стандарт и качество?
             </h2>
             <div class="item-text clearfix">
-              <div class="col-md-8">
+              <div class="col-md-4 item-text__img col-xs-12 pull-right">
+                <div class="row">
+                  <img src="https://placehold.it/440x300" alt="">
+                </div>
+              </div>
+              <div class="col-md-8 col-xs-12 pull-left">
                 <div class="row">
                   <p>
                     Мы имеем отличительную особенность на рынке услуг по отделке и ремонту – мы стандартизировали наши работы.  Что это значит? Не для кого ни секрет, что большинство бригад на рынке не имеют специализированного образования для исполнения отделочных работ. Это приводит к тому, что каждая бригада учится самостоятельно на своих ошибках. Одни разбираются лучше в электрике, другие в малярных работах. Понимая это, <b>мы в течении 2-х лет (и продолжаем эту работу постоянно) изучали лучшие стандарты в отделке</b>, обучались у компаний поставщиков, делая большое количество объектов, собирали собственный опыт (к сожалению иногда и на ошибках). В итоге мы пришли к пониманию: какую работу как лучше выполнять, с какими материалами она прослужит дольше. Все это воплотилось в документ компании «Стандарт качества отделки», в нем прописана четко последовательность работ, используемые материалы и методы их проверки. 
@@ -131,11 +181,6 @@
                   <p>
                     Для вас клиентов это означает, что на всех наших объектах все работы будут сделаны одинаково – в соответствии с нашим стандартами. Обзоры этих стандартов можно посмотреть на нашей страничке – Миллер ТВ. 
                   </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="row">
-                  <img src="https://placehold.it/440x300" alt="">
                 </div>
               </div>
             </div>
@@ -186,8 +231,8 @@
       <div class="container">
         <div class="row">
           <h2 class="text-center">Порядок работы с клиентами</h2>
-          <div class="method-wrapp clearfix">
-            <div class="col-md-4 method__item">
+          <div class="method-wrapp clearfix" id="method">
+            <div class="col-md-4 col-sm-12 method__item">
               <div class="method__img table-top">
                 <img src="img/met1.png" alt="">
               </div>
@@ -198,7 +243,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 method__item">
+            <div class="col-md-4 col-sm-12 method__item">
               <div class="method__img table-top">
                 <img src="img/met2.png" alt="">
               </div>
@@ -209,7 +254,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 method__item">
+            <div class="col-md-4 col-sm-12 method__item">
               <div class="method__img table-top">
                 <img src="img/met3.png" alt="">
               </div>
@@ -220,7 +265,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 method__item">
+            <div class="col-md-4 col-sm-12 method__item">
               <div class="method__img table-top">
                 <img src="img/met4.png" alt="">
               </div>
@@ -231,7 +276,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 method__item">
+            <div class="col-md-4 col-sm-12 method__item">
               <div class="method__img table-top">
                 <img src="img/met5.png" alt="">
               </div>
@@ -242,7 +287,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 method__item">
+            <div class="col-md-4 col-sm-12 method__item">
               <div class="method__img table-top">
                 <img src="img/met4.png" alt="">
               </div>
