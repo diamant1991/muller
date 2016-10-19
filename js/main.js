@@ -12,7 +12,9 @@ if($('.main-slider').length){
 		controls: false
 	});
 }
-
+if (window.matchMedia("(min-width: 992px)").matches){
+	new WOW().init();
+}
 if (window.matchMedia("(max-width: 991px)").matches && window.matchMedia("(min-width: 768px)").matches){
 	if($('#sentence-slider').length){
 		$('#sentence-slider').bxSlider({
