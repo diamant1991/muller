@@ -98,8 +98,10 @@
     width: 100%;
     height: auto;
     border: 3px solid #74c8fc; }
-  .header__info {
-    display: none; }
+  .header__tel {
+    font-size: 18px; }
+  .header__info__text {
+    font-size: 12px; }
   .works:before {
     content: none; }
   .works:after {

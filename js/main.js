@@ -3,13 +3,36 @@ $(".img-move").twentytwenty({
 });
 if($('#works-slider').length){
 	$('#works-slider').bxSlider({
+		adaptiveHeight: true,
 	  pagerCustom: '#works-thumb'
 	});
 }
 if($('.main-slider').length){
 	$('.main-slider').bxSlider({
 		adaptiveHeight:true,
-		controls: false
+		controls: false,
+		auto: true,
+		pause: 4000
+	});
+}
+if($('#calc-slider').length){
+	$('#calc-slider').bxSlider({
+		adaptiveHeight:true,
+		pagerCustom: '#calculation-pager',
+		nextSelector: '#calc-next',
+  	prevSelector: '#calc-prev',
+  	nextText: '',
+  	prevText: ''
+	});
+}
+if($('#calc-slider2').length){
+	$('#calc-slider2').bxSlider({
+		adaptiveHeight:true,
+		pagerCustom: '#calculation-pager2',
+		nextSelector: '#calc-next2',
+  	prevSelector: '#calc-prev2',
+  	nextText: '',
+  	prevText: ''
 	});
 }
 if (window.matchMedia("(min-width: 992px)").matches){
